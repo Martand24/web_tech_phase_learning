@@ -2,60 +2,12 @@
 <html>
 
 <head>
-    <title>Student Portal - Access Form</title>
+    <title>B.Tech Question Bank Portal</title>
     <link rel="icon" href="./assets/icon.png">
 </head>
-
-<body bgcolor="#e9f6fc">
-    <center>
-        <font color="navy">
-            <h1>Welcome to <font color="#0074d9">B.Tech Question
-                    Bank </font>
-            </h1>
-        </font>
-
-        <hr width="60%" size="3" color="#0074d9">
-        <p>
-            <font size="4"><b>Fill the following form to access semester-wise course structure and question papers.</b>
-            </font>
-        </p>
-        <br>
-        <form action="index.html" method="get">
-            <table border="2" cellpadding="10" cellspacing="0" bgcolor="#ffffff" width="450">
-                <tr bgcolor="#e6f0fa">
-                    <td align="right"><b>Full Name:</b></td>
-                    <td><input type="text" name="fullname" required></td>
-                </tr>
-                <tr>
-                    <td align="right"><b>Roll Number:</b></td>
-                    <td><input type="text" name="roll" required></td>
-                </tr>
-                <tr bgcolor="#e6f0fa">
-                    <td align="right"><b>Branch:</b></td>
-                    <td><input type="text" name="branch" required></td>
-                </tr>
-                <tr>
-                    <td align="right"><b>Semester:</b></td>
-                    <td><input type="number" name="sem" min="1" max="8" required></td>
-                </tr>
-                <tr bgcolor="#e6f0fa">
-                    <td align="right"><b>Contact:</b></td>
-                    <td><input type="text" name="contact" required></td>
-                </tr>
-                <tr>
-                    <td align="right"><b>Photograph:</b></td>
-                    <td><input type="file" name="photo" accept="image/*"></td>
-                </tr>
-                <tr bgcolor="#d0e6fa">
-                    <td colspan="2" align="center">
-                        <input type="submit" value="PROCEED">
-                    </td>
-                </tr>
-            </table>
-        </form>
-        <br>
-        <hr width="40%" color="#0074d9">
-    </center>
-</body>
+<frameset cols="25%,75%">
+    <frame src="course_structure.html" name="nav">
+        <frame src="welcome.html" name="main">
+</frameset>
 
 </html>
